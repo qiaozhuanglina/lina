@@ -1,0 +1,54 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.all{
+    color:#53565a;
+}
+.ido_01{
+    width:100%;
+}
+.ido_02,.ido_03,.ido_04{
+    margin:30px auto;
+    width:70%;
+    height:500px;
+    border:none;
+}
+.ido_02_1,.ido_03_1,.ido_04_1{
+    width:50%;
+    height:98%;
+    border:none;
+}
+.ido_02_2,.ido_03_2,.ido_04_2{
+    width:50%;
+    height:98%;
+    border:none;
+}
+.ido_02_2 h2,.ido_03_2 h2 .ido_04_2 h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 37px;
+}
+.ido_02_2 p,.ido_03_2 p,.ido_04_2 p{
+    font-size:18px;
+    line-height:30px;
+}
+.ido_02_2 button, .ido_03_2 button,.ido_04_2 button{
+    display: block;
+    width: 188px;
+
+    height: 38px;
+
+    margin: 0 auto;
+    margin-top: 57px;
+    border: 1px solid #979797;
+    background:#fff;
+
+}
+button a {
+    text-align: center;
+    text-decoration: none;
+    color: #53565a;
+    line-height: 38px;
+}

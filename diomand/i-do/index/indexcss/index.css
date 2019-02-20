@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#pic{
+    z-index: 1;
+}
+#picc{
+    height:720px;
+}
+#picc img{
+    width:100%;
+    height:720px;
+}
+header{
+    height:60px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+div.text1{
+    margin-top:50px;
+}
+.text1 h2{
+    font-family: "Times New Roman", 宋体;
+    font-weight: 100;
+    text-align:center;
+    margin-bottom:9px;
+    font-size:24px;
+    color:#53565A;
+}
+.text1 p{
+    font-family: "Times New Roman", 宋体;
+    margin:0 auto;
+    font-size:14px;
+    width:55%;
+    height:112px;
+    color:#53565A;
+    text-align:center;
+    line-height:29px;
+}
+.flex-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.flex-container li a img{
+    width:350px;
+    height:350px;
+}
+.pic1{
+    margin-top:15px;
+    height:500px;
+    width:100%;
+    position:relative;
+    background:url("../index.img/b1.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 480px;
+}
+div.word3{
+
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    left: 80%;
+    bottom: 39%;
+    margin-bottom: 2%;
+    text-align: center;
+
+    margin: 0 -25%;
+}
+
+ul>li{
+    list-style: none;
+}
+ul{
+    margin:0 auto;
+}
+.flex_big{
+
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.flex_small{
+    padding-left: 242px;
+    padding-right: 55px;
+}
+div.word3 h2{
+    font-size:24px;
+    font-family: "Times New Roman", 宋体;
+    font-weight: 100;
+    color:rgb(83, 86, 90);
+}
+div.word3 p{
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+    line-height: 28px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
+div.word3 a{
+    margin-top:13px;
+    margin:0 auto;
+
+
+    text-align:center;
+    border:none;
+    text-decoration:none;
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+}
+
+div.pic2{
+    position: relative;
+    margin-top:15px;
+    height:650px;
+    width:100%;
+    background:url("../index.img/big2.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 650px;
+}
+div.img5{
+    margin:5px 150px;
+}
+div .word33{
+
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    right: 80%;
+    top: 40%;
+    margin-bottom: -15%;
+    text-align: center;
+
+    margin: 0 -25%;
+}
+div.word33 h2{
+    font-size:24px;
+    font-family: "Times New Roman", 宋体;
+    font-weight: 100;
+    color:rgb(83, 86, 90);
+}
+div.word33 p{
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+    line-height: 28px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
+div.word33 a{
+    margin-top:13px;
+    margin:0 auto;
+    text-align:center;
+    border:none;
+    text-decoration:none;
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+}
+#pic6{
+
+    width:100%;
+    height:285px;
+}
+#pic6 ul li a img{
+   width:270px;
+    height:270px;
+    margin-left:66%;
+
+}
+
+
+div.pic4{
+    position:relative;
+    margin-top:15px;
+    height:700px;
+    width:100%;
+    background:url("../index.img/bbig.JPG");
+    background-repeat: no-repeat;
+    background-size:100% 691px;
+}
+div .word4{
+
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    right: 80%;
+    top: 40%;
+    margin-bottom: -15%;
+    text-align: center;
+
+    margin: 0 -25%;
+}
+div.word4 h2{
+    font-size:24px;
+    font-family: "Times New Roman", 宋体;
+    font-weight: 100;
+    color:rgb(83, 86, 90);
+}
+div.word4 p{
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+    line-height: 28px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
+div.word4 a{
+    margin-top:13px;
+    margin:0 auto;
+    text-align:center;
+    border:none;
+    text-decoration:none;
+    font-size:14px;
+    color:rgb(83, 86, 90);
+    font-family: "Times New Roman", 宋体;
+}
+
+.move ul{
+    width:95%;
+    margin-left:5%;
+}
+.move ul>li>img{
+    width:60%;
+
+}
+.moves>ul>li>img:hover{
+
+}

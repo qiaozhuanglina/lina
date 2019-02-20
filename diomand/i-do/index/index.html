@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+   <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="headcss/head.css"/>
+    <link rel="stylesheet" href="foot.css"/>
+
+</head>
+<header>
+    <div id="header_link"></div>
+</header>
+<body >
+<div class="carousel " data-ride="carousel " id="pic">
+       <div class="carousel-inner " id="picc">
+          <!-- <div class="carousel-inner " id="picc">
+            <div class="carousel-item active">
+                <img src="index.img/01.jpg "  a/>
+            </div>
+            <div class="carousel-item ">
+                <img src="index.img/02.jpg" alt=""/>
+            </div>
+            <div class="carousel-item ">
+                <img src="index.img/03.jpg" alt=""/>
+            </div>
+            <div class="carousel-item ">
+                <img src="index.img/04.jpg" alt=""/>
+            </div>
+            <div class="carousel-item ">
+                <img src="index.img/05.jpg" alt=""/>
+            </div>
+            <div class="carousel-item ">
+                <img src="index.img/06.jpg" alt=""/>
+            </div>
+        </div>-->
+        </div>
+        <ul class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#pic"></li>
+            <li data-slide-to="1" data-target="#pic"></li>
+            <li data-slide-to="2"   data-target="#pic"></li>
+            <li data-slide-to="3" data-target="#pic"></li>
+            <li data-slide-to="4" data-target="#pic"></li>
+            <li data-slide-to="5" data-target="#pic"></li>
+        </ul>
+        <a href="#pic" class="carousel-control-prev " data-slide="prev"  >
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#pic" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <div class="text1">
+        <h2>I Do TOWER系列</h2>
+        <p>本系列的创作灵感来自闻名遐迩的埃菲尔铁塔背后的浪漫爱情故事：设计师埃菲尔用建筑表达对太太的思念，践行了深爱一世的承诺。I Do将埃菲尔铁塔造型巧妙融入珠宝设计，每款作品均散发出法式浪漫气质，受到众多明星的青睐。</p>
+    </div>
+    <div class="text2 ">
+        <ul class="flex-container ">
+            <li><a href="#"><img src="index.img/01.png" alt=""></a></li>
+            <li><a href="#"><img src="index.img/02.png" alt=""></a></li>
+            <li><a href="#"><img src="index.img/03.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="pic1">
+        <div class="word3">
+            <h2>I Do 真爱加冕系列</h2>
+            <p>加冕每一段动人爱情</p>
+            <a href="index_series1.html">探索次系列</a>
+        </div>
+    </div>
+     <div class="d-flex flex-row flex_big ">
+    <div class="">
+        <img  src="index.img/big1.jpg" alt="" style="width:1071px;height:881px;"/>
+    </div>
+    <div class="flex-row flex_small">
+        <div class="d-flex">
+        <a href="#"> <img src="index.img/r1.png" alt=""/></a>
+        <a href="#"><img src="index.img/r2.png" alt=""/></a>
+    </div><div class="d-flex">
+        <a href="#"><img src="index.img/r3.png" alt=""/></a>
+        <a href="#"><img src="index.img/r4.png" alt=""/></a>
+    </div>
+    </div>
+    </div>
+    <div class="pic2">
+        <div class="word33">
+            <h2>I Do 系列</h2>
+            <p>开启一生真爱誓言</p>
+            <a href="series-second.html">探索此系列</a>
+        </div>
+    </div>
+<div class="w-100  slide" >
+
+    <div class="moves" >
+            <div class="move" style="left:-300px">
+        <img src="index.img/ride1.png" alt=""/>
+       <img src="index.img/ride2.png" alt=""/>
+       <img src="index.img/ride3.png" alt=""/>
+      <img src="index.img/ride4.png" alt=""/>
+       <img src="index.img/ride5.png" alt=""/>
+        <img src="index.img/ride6.png" alt=""/>
+    </div>
+        <a href="javascript:;"  class=" arrow_left ">&lt;</a>
+        <a href="javascript:;"  class=" arrow_right">&gt;</a>
+</div>
+
+</div>
+
+    <div class="pic4" >
+        <div class="word4">
+            <h2>I Do 天使之翼系列</h2>
+            <p>呵护爱情 天生一对</p>
+            <a href="index-series3.html">探索此系列</a>
+        </div>
+    </div>
+<script>
+
+    var move=document.querySelector(".move");
+    var right=document.querySelector(".arrow_right");
+    var left=document.querySelector(".arrow_left");
+
+    right.onclick=function(){
+        right_pic();
+    }
+    left.onclick=function(){
+        left_pic();
+    }
+
+    function right_pic(){
+        var newLeft;
+
+            nextLeft=parseInt(move.style.left)+300;
+        move.style.left=nextLeft+"px"
+
+
+    }
+    function left_pic(){
+        var newLeft;
+
+            nextLeft=parseInt(move.style.left)-300;
+        move.style.left=nextLeft+"px"
+
+
+    }
+
+
+
+
+
+
+
+
+</script>
+<footer>
+<div id="foot_link">
+
+</div>
+</footer>
+<script src="index.js"></script>
+<script type="text/javascript"  src="jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#header_link').load('head.html');
+        $('#foot_link').load('foot.html');
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equive="Cache-Control" content="no-cache"/>
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="headcss/head.css"/>
+</head>
+<body>
+
+<div  class="nav-box" id="left" style="display: none">
+  <div class="nav-left f1">
+
+      <a href="realize.html" class="seeido" target="_blank">
+        <div class="_img"></div>
+          <div class="content">了解I Do</div>
+       </a>
+      <a href="kiss.html" class="perfume" target="_blank">
+          <div class="_img"></div>
+          <div class="content">香榭之吻</div>
+      </a>
+      <div class="ring">
+          <div class="_img" style="background:url(head.img/ring.png) no-repeat " ></div>
+          <div class="content">致美婚戒</div>
+      </div>
+      <div class="gift" >
+          <div class="_img" style="background:url(head.img/gift.png) no-repeat" ></div>
+          <div class="content">gift</div>
+      </div>
+      <div class="series">
+          <div class="_img" style="background:url(head.img/series.png) no-repeat" ></div>
+          <div class="content">系列</div>
+      </div>
+      <a href="word.html" class="idoword" target="_blank">
+          <div class="_img"></div>
+          <div class="content">I Do 世界</div>
+      </a>
+      <a href="#" class="shop" target="_blank">
+          <div class="_img"></div>
+          <div class="content">查找门店</div>
+      </a>
+      <div class="cross" >
+          <div class="" ></div>
+          <div class="content">退出菜单</div>
+      </div>
+</div>
+
+
+
+<div class="nav_middle f1 " style="display: none">
+  <div id="series_nav" style="display:none;">
+       <div class="arrow_up">
+           <div class="up" style="display:none;"></div>
+       </div>
+       <div id="childnav">
+           <div id="childbox">
+               <div class="series_child_nav nav_one">
+                   <a href="" target="_blank" class="series_title" data-id="series_01" style="background:rgb(255,255,255)">TOWER系列</a>
+               </div>
+                <div class="series_child_nav ">
+                   <a href="" target="_blank" class="series_title" data-id="series_03" style="background:rgb(255,255,255)">I DO 系列</a>
+               </div>
+               <div class="series_child_nav ">
+                   <a href="" target="_blank" class="series_title" data-id="series_02" style="background:rgb(255,255,255)">360LOVE系列</a>
+               </div>
+               <div class="series_child_nav ">
+                   <a href="" target="_blank" class="series_title" data-id="series_02" style="background:rgb(255,255,255)">花冠系列</a>
+               </div>
+               <div class="series_child_nav ">
+                   <a href="" target="_blank" class="series_title" data-id="series_02" style="background:rgb(255,255,255)">FOREVER系列</a>
+               </div>
+               <div class="series_child_nav ">
+                   <a href="" target="_blank" class="series_title" data-id="series_02" style="background:rgb(255,255,255)">情书系列</a>
+               </div>
+           </div>
+       </div>
+
+
+      <div class="arror_down">
+          <div class="down" style="display:none;"></div>
+      </div>
+   </div>
+    <div id="gift_nav" style="display: none">
+        <div class="zhanwei"></div>
+        <div class="gift_nav nav_one"data-toggle="tab"  data-target="#gift_content1" >
+            <a href="" target="_blank" class="gift_title1" style="background:rgb(255,255,255)">纪念日</a>
+            <span class="gift_span1"></span>
+        </div>
+        <div class="gift_nav " data-toggle="tab"  data-target="#gift_content2" >
+            <a href="" target="_blank" class="gift_title2" style="background:rgb(255,255,255)">项链吊坠</a>
+            <span class="gift_span2"></span>
+        </div>
+        <div class="gift_nav " data-toggle="tab"  data-target="#gift_content3" >
+            <a href="" target="_blank" class="gift_title3" style="background:rgb(255,255,255)">手链</a>
+            <span class="gift_span3"></span>
+        </div>
+        <div class="gift_nav " data-toggle="tab"  data-target="#gift_content4" >
+            <a href="" target="_blank" class="gift_title4" style="background:rgb(255,255,255)">耳饰</a>
+            <span class="gift_span4"></span>
+        </div>
+    </div>
+    <div id="ring_nav" style="display: none">
+        <div class="zhanwei"></div>
+        <div>
+            <a href=""target="_blank" class="ring_title1" style="background:rgb(255,255,255)">结婚对戒</a>
+            <span class="ring_span1"></span>
+        </div>
+        <div>
+            <a href=""target="_blank" class="ring_title2" style="background:rgb(255,255,255)">订婚钻戒</a>
+            <span class="ring_span2"></span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="nav_right f1 " style="display: none"  >
+        <div class="series-list rightlist">
+            <div class="right_up">
+                <div class="up_btn"></div>
+            </div>
+            <div class="list-content">
+
+               <div class="ring_product_two"  style="display:none">
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                      </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+                   <a href="#"  class="hrefbox" target="_blank">
+                       <div class="series-img">
+                           <img src="head.img/999.png" alt=""/>
+                       </div>
+                       <div class="series-content">
+                           <div class="title_big">I DO 叠加系列</div>
+                           <div class="title_small">18k金钻石系列</div>
+                       </div>
+                   </a>
+               </div>
+
+                <div class="ring_product_one"  style="display:none">
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/888.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="gift_product_one" id="gift_content1" style="display:none">
+                    <a href="#"  class="hrefbox" target="_blank" >
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x1.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gift_product_one" id="gift_content2"  style="display:none">
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x2.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gift_product_one" id="gift_content3"  style="display:none">
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x3.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gift_product_one" id="gift_content4"  style="display:none">
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                    <a href="#"  class="hrefbox" target="_blank">
+                        <div class="series-img">
+                            <img src="head.img/x4.png" alt=""/>
+                        </div>
+                        <div class="series-content">
+                            <div class="title_big">I DO 叠加系列</div>
+                            <div class="title_small">18k金钻石系列</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="right_down">
+                <div class="down_btn"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="common_header">
+ <div id="dropmenu" class="nav">
+     <div class="ml-5" id="droplist" style="display: block">
+     <div class="menu_image"><img src="head.img/py.png" alt=""/></div>
+     <div class="menu">菜单</div>
+     </div>
+     <div class="logo">
+         <a href="#" class="logo_image"></a>
+     </div>
+     <div class="menu_right">
+         <a href="" class="mr-4 "><img src="head.img/p_big.png" alt="" class="mt-2"/></a>
+         <a href="" class="login"><img src="head.img/p_flow.png" alt="" class="mt-2"/></a>
+         <div class="loginmask" style="display:none">
+             <div class="box pointer_to">
+                 <p class="text-center" style="display:block">
+                     <span class="login_zh"><a href="login.html">My I Do</a></span>
+                     <span class="login_off" style="display:none">退出</span>
+                 </p>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+
+
+
+<div class="searchchall"   style="display:none">
+   <div class="search">
+         <div class="search_center">
+              <div class="entry_text">
+                  <input type="text" placeholder="系列、名称、款式"/>
+                  <a href="javascript:;" class="search_go"></a>
+              </div>
+             <span>热词推荐：</span>
+             <ul>
+                 <li><a href="">钻石</a></li>
+                 <li><a href="">I DO</a></li>
+                 <li><a href="">红宝石</a></li>
+                 <li><a href="">真爱加冕</a></li>
+                 <li><a href="">LOVE</a></li>
+             </ul>
+         </div>
+
+   </div>
+       <div class="search_con">
+           <div class="search_close">x</div>
+
+           <ul>
+               <li>
+                   <div class="search_c">
+                       <div class="search_left">
+                           <span class="left_line"></span>
+                           <span class="english_name">WEDDIND</span>
+                           <span class="chinese_name">致美婚戒</span>
+                       </div>
+                       <div class="search_right">
+                           <ul>
+                               <li>
+                                   <a href="">
+                               <img src="head.img/nvjie.jpg" alt=""/>
+                               <span>订婚钻戒</span>
+                                   </a>
+                             </li>
+                               <li>
+                                   <a href="">
+                                       <img src="head.img/duijie.jpg" alt=""/>
+                                       <span>结婚钻戒</span>
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="search_c">
+                       <div class="search_left">
+                           <span class="left_line"></span>
+                           <span class="english_name">GIFT</span>
+                           <span class="chinese_name">礼物</span>
+                       </div>
+                       <div class="search_right">
+                           <ul>
+                               <li>
+                                   <a href="">
+                                       <img src="head.img/jinianri.jpg" alt=""/>
+                                       <span>纪念日</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="">
+                                       <img src="head.img/diaozhui.jpg" alt=""/>
+                                       <span>项链吊坠</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="">
+                                       <img src="head.img/shoulianer.jpg" alt=""/>
+                                       <span>手链</span>
+                                   </a>
+                               </li>
+                               <li>
+                                   <a href="">
+                                       <img src="head.img/ershi.jpg" alt=""/>
+                                       <span>耳饰</span>
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </li>
+               <li>
+                   <div class="search_c">
+                       <div class="search_left">
+                           <span class="left_line"></span>
+                           <span class="english_name">COLLECTION</span>
+                           <span class="chinese_name">系列</span>
+                       </div>
+                       <div class="search_right">
+                           <div class="flashSale_wrap">
+                               <div class="flashSale area">
+                                   <div class="tab-content">
+                                       <div class="tab-pane active">
+                                           <div class="flashSaleDeals" style="left:-360px">
+                                               <div class="v-cont" style="width:9648px; overflow:hidden;margin-left:0">
+                                                   <ul class="flder" >
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/tianshizhiyi.png" class="dealImg" alt=""/>
+                                                                       <span>天使之翼系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/huaguan.png" class="dealImg" alt=""/>
+                                                                       <span>花冠系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/love.png" class="dealImg" alt=""/>
+                                                                       <span>LOVE系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/forver.png" class="dealImg" alt=""/>
+                                                                       <span>FORVER系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/qingshu.png" class="dealImg" alt=""/>
+                                                                       <span>情书系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/tianxin.png" class="dealImg" alt=""/>
+                                                                       <span>甜心系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/xindong.png" class="dealImg" alt=""/>
+                                                                       <span>心动系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/yaoshijingling.png" class="dealImg" alt=""/>
+                                                                       <span>钥匙精灵系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/themoment.png" class="dealImg" alt=""/>
+                                                                       <span>THE MOMENT系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="xsq_deal_wrapper">
+                                                               <a href="" class="saleDeal">
+                                                                   <div class="dealCon">
+                                                                       <img src="head.img/qingxin.png" class="dealImg" alt=""/>
+                                                                       <span>倾心系列</span>
+                                                                   </div>
+                                                               </a>
+                                                           </div>
+                                                       </li>
+                                                   </ul>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <a href="javascript:" class="zuo trigger"></a>
+                                   <a href="javascript:" class="you trigger"></a>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </li>
+           </ul>
+       </div>
+</div>
+<script>
+
+var ring=document.body.getElementsByClassName("ring")[0].children[0];
+var gift=document.body.getElementsByClassName("gift")[0].children[0];
+var series=document.body.getElementsByClassName("series")[0].children[0];
+var s_nav=document.getElementById("series_nav");
+var g_nav=document.getElementById("gift_nav");
+var r_nav=document.getElementById("ring_nav");
+var nav_middle=document.getElementsByClassName("nav_middle")[0];
+var left=document.getElementById("left");
+var droplist=document.getElementById("droplist");
+var cross=document.getElementsByClassName("cross")[0].children[1];
+
+function old(){
+ring.style.background="url(head.img/ring.png) no-repeat";
+gift.style.background="url(head.img/gift.png) no-repeat";
+ series.style.background="url(head.img/series.png) no-repeat";
+    s_nav.style.display="none";
+    g_nav.style.display="none"
+    r_nav.style.display="none"
+    nav_middle.style.display="none"
+}
+
+    ring.onclick=function(){
+    old()
+        nav_middle.style.display="block"
+       ring.style.background="url(head.img/ring1_hover.png) no-repeat";
+        ring_nav.style.display="block"
+    }
+
+gift.onclick=function(){
+    old()
+    nav_middle.style.display="block"
+   gift.style.background="url(head.img/gift_hover.png) no-repeat";
+    gift_nav.style.display="block"
+}
+
+series.onclick=function(){
+    old()
+    nav_middle.style.display="block"
+    series.style.background="url(head.img/series_hover.png) no-repeat";
+    series_nav.style.display="block";
+}
+ var image_onmouse=document.getElementsByClassName("login")[0];
+    var  onmouse=document.getElementsByClassName("loginmask")[0];
+
+image_onmouse.onmouseover=function(){
+    onmouse.style.display="block";
+}
+image_onmouse.onmouseout=function(){
+    onmouse.style.display="none";
+}
+onmouse.addEventListener("mouseleave",function(){
+    onmouse.style.display="block";
+},false)
+
+    droplist.onclick=function(){
+        droplist.style.display="none";
+        left.style.display="block";
+    }
+    cross.onclick=function(){
+        droplist.style.display="block";
+        left.style.display="none"
+    }
+  /* $("#ring_nav>:first-child").next().mouseenter(function(){
+     if($(".nav_right ").hide()) {
+         $(".nav_right").show()
+         $(".ring_product_one").show()
+     }else{
+         $(".ring_product_one").siblings().hide();
+         $(".ring_product_one").show();
+     }
+    })
+
+
+
+
+$("#ring_nav>:last-child").mouseenter(function(){
+    $(".ring_product_one").hide()
+    $(".ring_product_two").css("display","block")
+
+})*/
+
+
+
+  var flashSaleDeals=document.querySelector(".flashSaleDeals");
+    var zuo=document.querySelector(".zuo");
+    var you =document.querySelector(".you");
+
+you.onclick=function(){
+    right_pic();
+}
+zuo.onclick=function(){
+    left_pic();
+}
+
+function right_pic(){
+    var newLeft;
+
+    nextLeft=parseInt(flashSaleDeals.style.left)+90;
+    flashSaleDeals.style.left=nextLeft+"px"
+
+
+}
+function left_pic(){
+    var newLeft;
+
+    nextLeft=parseInt(flashSaleDeals.style.left)-90;
+    flashSaleDeals.style.left=nextLeft+"px"
+}
+var mt2=document.querySelectorAll(".mt-2")[0];
+var close=document.querySelector(".search_close");
+var searchchall=document.querySelector(".searchchall")
+mt2.onclick=function(e){
+    e.preventDefault();
+    searchchall.style.display="block";
+
+}
+  close.onclick=function(){
+      searchchall.style.display="none";
+  }
+
+  
+
+
+
+ function jump(){
+     var input=document.querySelector(".entry_text>input");
+  var  input_a=document.querySelector(".entry_text>a");
+  var listdata=["钻石","I DO","红宝石","真爱加冕","LOVE"];
+     input_a.onclick=function(){
+        if(!!input.value){
+             var index;
+            for(var i in listdata){
+                if(input.value==listdata[i]){
+                    index=listdata.indexOf(`${input.value}`)
+                }
+            }
+            console.log(index);
+
+            function checkindex(){
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var result=xhr.responseText;
+                       
+                         window.parent.name=result;
+						console.log(result)
+					}
+				}
+				xhr.open("get","head/checkindex?indx="+index,false);
+				xhr.send(null);
+			}
+            checkindex()
+
+           this.setAttribute("href","http://127.0.0.1:3000/jump.html");
+            
+        }
+     }
+
+ }
+
+ jump()
+
+
+</script>
+<script>
+ 
+</script>
+
+
+
+
+</body>
+</html>

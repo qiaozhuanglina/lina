@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="kiss.css"/>
+</head>
+<header>
+    <div id="header_link"></div>
+</header>
+<body>
+<div class="">
+
+    <div>
+        <img src="img/kiss_01.jpg" class="kiss_01 w-100" alt=""/>
+    </div>
+    <div><a href=""><img src="img/kiss_02.jpg" class="w-100" alt=""/></a></div>
+    <div><a href=""><img src="img/kiss_03.jpg" class="w-100" alt=""/></a></div>
+    <div><a href=""><img src="img/kiss_04.jpg" class="w-100" alt=""/></a></div>
+    <div><a href=""><img src="img/kiss_05.jpg" class="w-100" alt=""/></a></div>
+
+</div>
+
+<script src="jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#header_link').load('head.html');
+        $('#foot_link').load('foot.html');
+    })
+</script>
+</body>
+<footer>
+    <div id="foot_link"></div>
+</footer>
+</html>

@@ -1,0 +1,53 @@
+*{
+    margin :0;
+    padding:0;
+
+}
+.d1{
+    border:none;
+    width:100%;
+    height:14px;
+    background:#f4c3cc;
+}
+li{
+    list-style:none;
+}
+li >ul>li>a{
+    text-decoration: none;
+     font-size:12px;
+     font-family: "Times New Roman", ËÎÌו;
+     font-weight: 100;
+    color: #53565a;
+ }
+ div>ul>li>a{
+     text-decoration: none;
+     color: #53565a;
+     font-size: 14px;
+     margin-bottom: 15px;
+     font-weight: 400;
+ }
+ .hr{
+     height:1px;
+     width:910px;
+     margin:0 auto;
+     text-align:center;
+     color:#53565a;
+ }
+ .logo{
+     width:910px;
+     height:140px;
+     margin:0 auto;
+
+ }
+ .weixin,.phone{
+     width:455px;
+     height:140px;
+     text-align:center;
+ }
+ .phone{
+     margin-top:19px;
+ }
+ .phone>ul>li{
+     vertical-align: middle;
+     margin-right:40px;
+ }

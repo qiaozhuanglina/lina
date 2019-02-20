@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="jump.css"/>
+    <script src="jquery.min.js"></script>
+</head>
+<header>
+    <div id="header_link"></div>
+</header>
+<body>
+    
+<div class="keyword" style="padding: 58px;">
+<div class="keyword_top">
+<div class="keyword_title fl">筛选条件:</div>
+<ul>
+<li class="fl">
+<a href="#">品类<span class="keyword_down"></span></a>
+<div class="child_down choose">
+<a href="#">女戒</a>
+<a href="#">对戒</a>
+<a href="#">项链</a>
+<a href="#">耳饰</a>
+<a href="#">手链</a>
+</div>
+</li>
+<li class="fl">
+<a href="#">钻石<span class="keyword_down"></span></a>
+<div class="child_down choose">
+<a href="#">1ct</a>
+<a href="#">0.5ct</a>
+<a href="#">0.3ct</a>
+<a href="#">0.3ct以下</a>
+</div>
+</li>
+<li class="fl">
+<a href="#">材质<span class="keyword_down"></span></a>
+<div class="child_down choose">
+<a href="#">18K金</a>
+<a href="#">PT950</a>
+</div>
+</li>
+<li class="fl">
+<a href="#">颜色<span class="keyword_down"></span></a>
+<div class="child_down choose">
+<a href="#">白色</a>
+<a href="#">黄色</a>
+<a href="#">红色</a>
+</div>
+</li>
+</ul>
+<div class="shengyu fr" style="color: #97999b;">共163件</div>
+<div class="shengyu fr" style="color: #53565a;">钻石</div>
+</div>
+<div class="keyword_bottom">
+<ul></ul>
+</div>
+</div>
+
+<div class="list clearfix">
+
+<!--<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰" />
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰">
+</div>
+<div class="detail_content">
+<p class="belong">I Do X Matt Booth特别设计款 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石耳饰</p>
+<div class="presentation">
+</div>
+<p class="link">
+<a href="/lastCommodity-E00083.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="https://img3.ido-love.com/cmd/test-G00018-BD-017676.png" alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="https://img3.ido-love.com/cmd/test-G00018-BD-017676.png" alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌璀璨钻石和红宝，光芒璀璨，耀眼夺目
+</div>
+<p class="link">
+<a href="/lastCommodity-G00018.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="https://img5.ido-love.com/cmd/test-G00017-BD-010697.png" alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="https://img5.ido-love.com/cmd/test-G00017-BD-010697.png" alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌红宝石寓意深刻，表现出令人为之疯狂的爱及情不自禁的原力。
+</div>
+<p class="link">
+<a href="/lastCommodity-G00017.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>-->
+</div>
+<script>
+  
+  var detaiPic=JSON.parse(window.name);
+  
+ // console.log(window.name);
+  var html=`<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[0].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰" />
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[0].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰">
+</div>
+<div class="detail_content">
+<p class="belong">I Do X Matt Booth特别设计款 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石耳饰</p>
+<div class="presentation">
+</div>
+<p class="link">
+<a href="/lastCommodity-E00083.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[1].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[1].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌璀璨钻石和红宝，光芒璀璨，耀眼夺目
+</div>
+<p class="link">
+<a href="/lastCommodity-G00018.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[2].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#"} src=${detaiPic[2].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌红宝石寓意深刻，表现出令人为之疯狂的爱及情不自禁的原力。
+</div>
+<p class="link">
+<a href="/lastCommodity-G00017.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[3].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰" />
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[3].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰">
+</div>
+<div class="detail_content">
+<p class="belong">I Do X Matt Booth特别设计款 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石耳饰</p>
+<div class="presentation">
+</div>
+<p class="link">
+<a href="/lastCommodity-E00083.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[4].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[4].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌璀璨钻石和红宝，光芒璀璨，耀眼夺目
+</div>
+<p class="link">
+<a href="/lastCommodity-G00018.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[5].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#"} src=${detaiPic[5].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌红宝石寓意深刻，表现出令人为之疯狂的爱及情不自禁的原力。
+</div>
+<p class="link">
+<a href="/lastCommodity-G00017.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[6].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰" />
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[6].pic}  alt="I Do X Matt Booth特别设计款 疯狂的爱系列 18K金钻石红宝石耳饰">
+</div>
+<div class="detail_content">
+<p class="belong">I Do X Matt Booth特别设计款 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石耳饰</p>
+<div class="presentation">
+</div>
+<p class="link">
+<a href="/lastCommodity-E00083.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+<div class="product">
+<div class="img">
+<p class="search_product_zindex">
+<span class="search_product_title"></span>
+</p>
+<img data-src="#" src=${detaiPic[6].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯"/>
+</div>
+<div class="product_detail">
+<div class="content_middle clearfix">
+<div class="detail_img">
+<img data-src="#" src=${detaiPic[6].pic} alt="I Do 疯狂的爱系列 18K金钻石红宝石手镯">
+</div>
+<div class="detail_content">
+<p class="belong">I Do 疯狂的爱系列</p>
+<p class="title">18K金钻石红宝石手镯</p>
+<div class="presentation">
+采用金字塔形纹路设计，蕴含着积微成著而攀升到顶点的含义。手镯镶嵌璀璨钻石和红宝，光芒璀璨，耀眼夺目
+</div>
+<p class="link">
+<a href="/lastCommodity-G00018.html" target="_blank" class="sure">了解详情</a>
+|<a class="contact_to_try_on">预约试戴</a>
+</p>
+</div>
+</div>
+<span class="close">×</span>
+</div>
+</div>
+`
+var div=document.querySelector(".list")
+div.innerHTML=html;
+</script>
+<script src="jquery.min.js"></script>
+<script>
+
+
+ $(".fl>a").on("click",e=>{
+     
+   $(".fl>a").next().css("display","none");
+    $(e.target).next().css("display","block");
+    
+  });
+  
+
+ 
+</script>
+<script src="jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#header_link').load('head.html');
+        $('#foot_link').load('foot.html');
+    })
+
+    
+</script>
+
+</body>
+<!--<footer>
+    <div id="foot_link"></div>
+</footer>-->
+</html>

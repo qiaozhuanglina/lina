@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+}
+#content{
+    width:1201px;
+    height:400px;
+    margin:100px auto;
+    color:#8c7f70;
+}
+.headname{
+    width:100%;
+    height:80px;
+    line-height:80px;
+}
+.headname h2{
+     text-align: center;
+     font-family: "Times New Roman";
+     font-size:1.5em ;
+}
+.reg,.log{
+    margin-top:35px;
+    margin-bottom: 35px;
+    width:480px;
+    height:300px;
+    border:none;
+}
+.hr_center{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 1px;
+    height: 250px;
+    border: 1px solid #8c7f70;
+}
+.reg_tit1,.log_tit1{
+    text-align: left;
+    line-height:60px ;
+    height:60px;
+    font-size:16px;
+    font-weight:600;
+    margin:18px 0 0;
+
+}
+.reg_tit2{
+    text-align: left;
+    line-height:35px ;
+    height:70px;
+    margin:14px 0 0;
+}
+.reg_but{
+    background:#fff;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 40px;
+    border-radius:5px ;
+}
+
+table input[type=text],table button,table p {
+    width:402px;
+    height:41px;
+    border: 1px solid #f2f2f2;
+    background-color: #fbfbfb;
+    margin-top:7px;
+    padding-left:10px;
+    font: 400 13.3333px Arial;
+}
+button a{
+    text-decoration: none;
+    font: 400 13.3333px Arial;
+    color:#000;
+}
+.log_but{
+    background:#fff;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+
+    border-radius:5px ;
+}
+table a{
+    font-size:14px;
+    color:#8c7f70;
+   text-decoration: none;
+
+}
+

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="login.css"/>
+
+</head>
+<header>
+    <div id="header_link"></div>
+</header>
+<body>
+<div>
+     <div id="content">
+    <div class="headname"><h2>注册或登录I do 会员</h2> </div>
+         <div class="d-flex flex-row m-auto justify-content-between">
+         <div class="reg">
+             <p class="reg_tit1 ">注册I Do会员</p>
+             <p class="reg_tit2">一句"I Do" ,   婚戒滑入无名指 ,   自此以爱为名 ,   相守一生
+                 成为I Do会员 ,   探索浪漫爱情故事</p>
+             <button  class="reg_but"><a href="register.html">注册</a></button>
+         </div>
+             <div class="hr_center"></div>
+         <div class="log">
+             <p class="log_tit1">I Do会员登录</p>
+             <table   >
+
+                 <tr>
+                     <td><input type="text" id="phone" name="phone" placeholder="手机号/用户名"/></td>
+                 </tr>
+                 <tr>
+                     <td><input type="text" id= placeholder="滑动模块至右侧"/></td>
+                 </tr>
+
+
+                 <tr>
+                     <td><input type="text" id="upwd" name="upwd" placeholder="登录密码"/>
+                     <span id="s1" style="display:inline-block"></span>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td><a href="">验证码登陆</a>&nbsp;&nbsp;<a href="">忘记密码</a>&nbsp;&nbsp;<a href="">第三方账号登录</a></td>
+                 </tr>
+                 <tr>
+                     <td><button class="log_but" onclick="log()">登陆</button></td>
+                 </tr>
+             </table>
+         </div>
+        </div>
+     </div>
+     </div>
+     <script>
+	function log(){
+	  var xhr=new XMLHttpRequest();
+	  xhr.onreadystatechange=function(){
+	  if(xhr.status==200&&xhr.readyState==4){
+	     var result=xhr.responseText
+		 s1.innerHTML=result
+	    }
+	  }
+	  xhr.open("post","/user/login",true);
+	  xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+	  var formdata="phone="+phone.value+"&upwd="+upwd.value
+	  xhr.send(formdata)
+	}
+	
+	</script>
+<script src="jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#header_link').load('head.html');
+        $('#foot_link').load('foot.html');
+    })
+</script>
+</body>
+<footer>
+    <div id="foot_link"></div>
+</footer>
+</html>
